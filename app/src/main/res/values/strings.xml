@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Aashirvaad</string>
+    <string-array name="age">
+        <item>Select Age</item>
+        <item>6-12 Months</item>
+        <item>1-3 Years</item>
+        <item>4-6 Years</item>
+        <item>7-9 Years</item>
+        <item>10-12 Years</item>
+        <item>13-15 Years</item>
+        <item>16-18 Years</item>
+    </string-array>
+</resources>

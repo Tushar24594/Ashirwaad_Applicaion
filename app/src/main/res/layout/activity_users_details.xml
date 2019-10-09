@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/two"
+    tools:context=".usersDetails">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/goHome1"
+        android:background="@null"
+        android:paddingVertical="80sp"
+        android:paddingHorizontal="150sp"/>
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="300sp"
+        android:layout_marginRight="50sp">
+
+        <LinearLayout
+            android:id="@+id/nameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/colonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40sp"
+                android:text=":"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:background="@drawable/a"
+                android:inputType="textPersonName"
+                android:paddingLeft="14sp"
+                android:paddingTop="5sp"
+                android:paddingRight="5sp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/genderLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameLayout"
+            android:layout_marginTop="40sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/genderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/colon1Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:text=":"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#ffffff"
+                    android:checked="true"
+                    android:text="Boy"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="30sp"
+                    android:theme="@style/RadioButtonStyle" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30sp"
+                    android:buttonTint="#ffffff"
+                    android:text="Girl"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="30sp"
+                    android:theme="@style/RadioButtonStyle" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/genderLayout"
+            android:layout_marginTop="40sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AGE"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/colon2Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="69sp"
+                android:text=":"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/spinner_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20sp"
+                android:background="@drawable/a"
+                android:paddingLeft="15sp"
+                android:paddingTop="7sp"
+                android:paddingRight="15sp"
+                android:paddingBottom="7sp">
+
+                <Spinner
+                    android:id="@+id/ageEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="viewStart" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10sp"
+                    android:paddingTop="20sp"
+                    android:src="@drawable/arrow" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/error"
+                    android:focusable="true"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/yrsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:text="YRS"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/heightLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ageLayout"
+            android:layout_marginTop="40sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/heightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/colon3Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:text=":"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/ftEditText"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:background="@drawable/a"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:paddingLeft="10sp"
+                android:paddingTop="5sp"
+                android:paddingRight="5sp"
+                android:paddingBottom="5sp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/ftText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:text="FT"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/inchEditText"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:background="@drawable/a"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:paddingLeft="10sp"
+                android:paddingTop="5sp"
+                android:paddingRight="5sp"
+                android:paddingBottom="5sp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/inchText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:text="INCH"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weightLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heightLayout"
+            android:layout_marginTop="40sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/weightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/colon4Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18sp"
+                android:text=":"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/weightEditText"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:background="@drawable/a"
+                android:inputType="numberDecimal"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:paddingLeft="17sp"
+                android:paddingTop="5sp"
+                android:paddingRight="5sp"
+                android:paddingBottom="5sp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/kgText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:text="KG"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weightLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90sp"
+            android:background="@drawable/a"
+            android:paddingLeft="30sp"
+            android:paddingTop="20sp"
+            android:paddingRight="30sp"
+            android:paddingBottom="20sp"
+            android:text="SUBMIT"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
